@@ -1,0 +1,28 @@
+% XCircuit output "asdas.tex" for LaTeX input from asdas.ps
+\def\putbox#1#2#3#4{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{\scalebox{#3}{#4}}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-0.60\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.20\baselineskip}[0in][0in]{#1}}
+   \scalebox{1}{
+   \normalsize
+   \parbox{5.82812in}{
+   \includegraphics[scale=1]{asdas}\\
+   % translate x=916 y=380 scale 0.38
+   \putbox{0.79in}{0.60in}{1.20}{20kHz}%
+   \putbox{0.06in}{0.64in}{1.20}{12V}%
+   \putbox{0.12in}{1.08in}{1.20}{V1}%
+   \putbox{0.95in}{1.16in}{1.20}{12V}%
+   \putbox{4.12in}{2.20in}{1.20}{L1}%
+   \putbox{3.62in}{1.51in}{1.20}{100}%
+   \putbox{3.14in}{1.54in}{1.20}{R6}%
+   \putbox{3.70in}{0.87in}{1.20}{$5n$}%
+   \putbox{3.01in}{0.83in}{1.20}{C3}%
+   \putbox{1.97in}{1.06in}{1.20}{D1}%
+   \putbox{1.31in}{2.14in}{1.20}{M1}%
+   \putbox{5.62in}{1.10in}{1.20}{2A}%
+   \putbox{4.39in}{0.91in}{1.20}{C1}%
+   \putbox{4.29in}{0.66in}{1.20}{$1m$}%
+   } % close 'parbox'
+   } % close 'scalebox'
+   \vspace{-\baselineskip} % this is not necessary, but looks better
