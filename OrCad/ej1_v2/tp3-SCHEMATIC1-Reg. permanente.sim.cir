@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Reg. permanente"  [ d:\facu\tps_c2\c2_oblig3\orcad\ej1_v2\tp3-schematic1-reg. permanente.sim ] 
+
+** Creating circuit file "tp3-schematic1-reg. permanente.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad_v2\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 11m 10m 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tp3-SCHEMATIC1.net" 
+
+
+.END
