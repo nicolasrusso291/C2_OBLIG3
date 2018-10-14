@@ -1,9 +1,9 @@
-%!PS-Adobe-3.0
-%%Title: asdas.ps
-%%Creator: XCircuit v3.8 rev78
-%%CreationDate: Sat Oct 13 18:07:26 2018
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: asdas2.eps
+%%Creator: XCircuit v3.8 rev83
+%%CreationDate: Sun Oct 14 12:11:36 2018
 %%Pages: 1
-%%BoundingBox: 0 0 612 792
+%%BoundingBox: 68 68 610 282
 %%DocumentNeededResources: font Helvetica Times-Roman Symbol 
 %%EndComments
 %%BeginProlog
@@ -17,7 +17,7 @@
 %  The Johns Hopkins University (1993-2004)
 %  MultiGiG, Inc. (2004-2012)
 %
-%%BeginResource: procset XCIRCproc 3.8 0
+%%BeginResource: procset XCIRCproc 3.8 1
 %
 % supporting definitions --- these are the primary xcircuit types.
 
@@ -28,18 +28,18 @@
     exch findfont exch makefont dup length dict /ndict exch def
     { 1 index /FID ne { ndict 3 1 roll put } { pop pop } ifelse } forall
     ndict definefont pop} def
-/ul { dup type /stringtype eq showflag 1 eq and { gsave 
+/ul { count 0 gt { dup type /stringtype eq showflag 1 eq and { gsave 
    currentpoint topmat setmatrix 0 0 moveto 2 index stringwidth pop (_)
    false charpath flattenpath pathbbox grestore exch pop 1 index
    sub setlinewidth exch pop currentpoint 3 -1 roll add moveto 0
-   rlineto stroke moveto } if } def
-/ol { dup type /stringtype eq showflag 1 eq and { gsave gsave
+   rlineto stroke moveto } if } if } def
+/ol { count 0 gt { dup type /stringtype eq showflag 1 eq and { gsave gsave
    currentpoint topmat setmatrix 2 index stringwidth pop 3 index
    true charpath flattenpath pathbbox grestore exch pop
    exch pop topmat setmatrix (_) true charpath pathbbox grestore
    exch pop 1 index sub setlinewidth exch pop currentpoint
    exch 4 1 roll exch sub add moveto pop 0 rlineto stroke
-   moveto } if } def
+   moveto } if } if } def
 /stW { gsave currentpoint newpath moveto true charpath flattenpath
 	pathbbox pop exch pop sub grestore } def
 /Ts {mark Tabs aload pop counttomark 1 add array astore /Tabs exch def Tabs
@@ -322,27 +322,22 @@ endgate
 
 %%EndSetup
 
-%%Page: 1 1
+%%Page: asdas 1
 %%PageOrientation: Portrait
-%%PageBoundingBox: 0 0 612 792
 /pgsave save def bop
 % 32.00 4.00 gridspace
-1.0000 inchscale
-2.6000 setlinewidth 980 1025 translate
+1.2480 inchscale
+2.6000 setlinewidth 901 341 translate
 
 1.000 0 -284 20 analog::diode
 1.000 360 -64 100 analog::resistor
 1.000 270 80 188 analog::inductor
 1.000 0 192 -12 analog::capacitor
 1.000 0 296 24 analog::isource
-(20kHz) {/Helvetica cf} 2 144 0 1.000 -584 -84 label
 1 1.000 -464 -12 32 0.000 360.000 xcarc
 1 1.000 -476 0 -452 0 -452 -24 -444 -24 4 polygon
 1 1.000 -476 0 -476 -24 -484 -24 3 polygon
 1.000 0 -640 -16 analog::vsource
-(12V) {/Helvetica cf} 2 144 0 1.000 -724 -76 label
-(V1) {/Helvetica cf} 2 144 0 1.000 -712 8 label
-(12V) {/Helvetica cf} 2 144 0 1.000 -552 24 label
 1.000 270 -464 188 analog::pmos2
 1.000 0 -464 -128 analog::gnd
 1.000 0 -284 -128 analog::gnd
@@ -368,16 +363,21 @@ endgate
 1 1.000 -640 -72 -640 -132 -640 -60 3 polygon
 1 1.000 -640 48 -640 188 -528 188 -540 188 4 polygon
 1 1.000 -284 -24 -284 -128 -284 -60 3 polygon
-(L1) {/Helvetica cf} 2 144 0 1.000 56 224 label
-(100) {/Helvetica cf} 2 144 0 1.000 -40 92 label
-(R6) {/Helvetica cf} 2 144 0 1.000 -132 96 label
-($5n$) {/Helvetica cf} 2 144 0 1.000 -24 -32 label
-(C3) {/Helvetica cf} 2 144 0 1.000 -156 -40 label
-(D1) {/Helvetica cf} 2 144 0 1.000 -356 4 label
-(M1) {/Helvetica cf} 2 144 0 1.000 -484 212 label
-(2A) {/Helvetica cf} 2 144 0 1.000 344 12 label
 (C1) {/Helvetica cf} 2 144 0 1.000 108 -24 label
-($1m$) {/Helvetica cf} 2 144 0 1.000 88 -72 label
+(M1) {/Helvetica cf} 2 144 0 1.000 -496 208 label
+(V1) {/Helvetica cf} 2 144 0 1.000 -732 20 label
+(12V) {/Helvetica cf} 2 144 0 1.000 -748 -40 label
+(V2) {/Helvetica cf} 2 144 0 1.000 -560 -12 label
+(20kHz) {/Helvetica cf} 2 144 0 1.000 -596 -84 label
+(D1) {/Helvetica cf} 2 144 0 1.000 -360 4 label
+(L1) {/Helvetica cf} 2 144 0 1.000 52 228 label
+(10u) {/Helvetica cf} 2 144 0 1.000 52 136 label
+(C3) {/Helvetica cf} 2 144 0 1.000 -156 -28 label
+(5n) {/Helvetica cf} 2 144 0 1.000 -140 -92 label
+(R6) {/Helvetica cf} 2 144 0 1.000 -148 88 label
+(100) {/Helvetica cf} 2 144 0 1.000 -36 92 label
+(2A) {/Helvetica cf} 2 144 0 1.000 344 8 label
+(1m) {/Helvetica cf} 2 144 0 1.000 120 -68 label
 pgsave restore showpage
 
 %%Trailer
