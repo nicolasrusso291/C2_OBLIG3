@@ -6,7 +6,7 @@ El Circuito comienza operando en modo continuo y gradualmente va pasando a modo 
 \HgraficarEPS{0.4}{asdas}{Esquema auxiliar.}{fig:cto_aux1}
 
 Despreciando el efecto de los diodos en los transistores y los efectos parasitos que produce $C_3$ y $R_6$ ya que el tiempo de descarga es mucho menor al periodo total del circuito. 
-
+\Gus{Pongo todas las formulas que use para que puedan seguirlo si queda muy desprolijo al final se pueden ir sacando}
 
 	\begin{equation}
 		f = 20 \si{\kilo\Hz} , T = 50 \si{\micro}s 
@@ -23,12 +23,11 @@ Al ser este un circuito conocido se sabe que :
  	I_s = \frac{{I_{max} \cdot \si{\tau}_{on}}}{{2 \cdot T}} + \frac{{I_{max} \cdot \si{\tau}_{off}}}{{2 \cdot T}}
  	\label{ec:Is}
 \end{equation}
-\Gus{esta cargado los resultados mañana termino de mirarlo}
 
  Suponiendo que $D= 0,5$
 
 \begin{equation}
-	\si{\tau}_{on} = D \cdot T = 
+	\si{\tau}_{on} = D \cdot T = 25\si{\micro}s 
 \end{equation}
 
 Como el circuito tiende al modo discontinuo, se observa de la figura XX que $I_{min} = 0$, por lo tanto.
@@ -66,7 +65,7 @@ Despejando me queda una ecuacion cuadratica para obtener $V_s$
 Se obtienen dos valores de $V_s$ al ser una fuente reductora:
 
 \begin{equation}
- 	V = 10,6\si{\volt} 
+ 	 \boxed{V = 10,6\si{\volt} }
 \end{equation}
 
 Si se consideran las caidas de tensón en los transistores y en $R_5$
@@ -75,8 +74,9 @@ Si se consideran las caidas de tensón en los transistores y en $R_5$
 \end{equation}
 Con $V_s$ ya calculado:
 \begin{equation}
-	I_{max} = 3,5 \si{\ampere}
+	 \boxed{I_{max} = 3,5 \si{\ampere}}
 \end{equation}
+
 
 Por lo tanto $V_{DSmax} = 0,35 \si{\volt}$ y $V_{R_1,...,R_5} = 0,35 \si{\volt}$
 
@@ -84,12 +84,12 @@ Esto desmuestra que fue correctamente despreciado.
 
 
 \begin{equation}
-	tau_{off} = 3,3 us = D_1 \cdot T
+	\boxed{\tau_{off} = 3,3 us = D_1 \cdot T}
 \end{equation}
 
 Entonces
 \begin{equation}
- 	D_1  = 7/ 106 
+ 	\boxed{D_1  = 7/ 106 }
 \end{equation}
 
 Utilizando la formula de $V_s$ verifico el resultado.
