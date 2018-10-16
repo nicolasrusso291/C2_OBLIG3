@@ -65,18 +65,18 @@ Con $D=0,7$
 \Flor{Justificación de D, lo llamé tcarga y tdescarga}
 
 
-El circuito del Esquema \ref{fig:Circ2} corresponde a un regulador \textit{Flyback}. Su funcionamiento puede analizarse en dos periodos. 
+El circuito del Esquema \ref{fig:Circ2} corresponde a un regulador \textit{Flyback}. Su funcionamiento puede analizarse en dos ciclos. 
 
 \begin{itemize}
-	\item \textbf{Primer ciclo:} cuando la señal de pulso toma el valor de 12V, $Vgs=12V$ por lo que el MOSFET está en conducción. El diodo $D$ se encuentra polarizado en inversa y la corriente que circula por el inductor produce almacenamiento de energái en su núcleo. El circuito simplificado se representa en la Figura \ref{fig:1ciclo}.
+	\item \textbf{Primer ciclo:} cuando la señal de pulso toma el valor de \SI{12}{\volt}, $V_{GS}=\SI{12}{\volt}$ por lo que el MOSFET está en conducción. El diodo $D$ se encuentra polarizado en inversa y la corriente que circula por el inductor produce almacenamiento de energía en su núcleo. El circuito simplificado se representa en la Figura \ref{fig:1ciclo}.
 
-Es posible calcular la corriente en el inductor máxima, sabiendo que el pulso tiene una frecuencia de 20kHz y que posee medio ciclo de trabajo.
+		Es posible calcular la corriente en el inductor máxima, sabiendo que el pulso tiene una frecuencia de \SI{20}{\kilo\hertz} y que posee medio ciclo de trabajo.
 
 		\begin{equation}
 			\centering
-			I_{L1} = \frac{V_1}{R_{DS<on>}} \left(1-\exp{(-t/\tau)}\right),
+			I_{L1}(t) = \frac{V_1}{R_{DS<on>}} \left(1-\exp{(-t/\tau)}\right),
 		\end{equation}
-		siendo $t_carga = \tau=L1/R_{DS<on>} = \SI{533}{\micro\second}$. El periodo del pulso es $\SI{50}{\micro\second} < t_{carga}$
+		siendo $t_{carga} = \tau=L1/R_{DS<on>} = \SI{533}{\micro\second}$. El periodo del pulso es $\SI{50}{\micro\second} < t_{carga}$
 entonces la corriente máxima en el inductor es
 
 		\begin{equation}
@@ -107,8 +107,10 @@ entonces la corriente máxima en el inductor es
 			\centering
 			V_S \cong V_E \left( 1 + \frac{t_{carga}}{t_{descarga}} \right) = \SI{12}{\volt} \left(1+ \frac{25}{15}\right) = \boxed{\SI{32}{\volt}}
 		\end{equation}
-		\Flor{$\Delta t1$ sería $t_{carga}$ y $\Delta t2$ sería $t_{descarga}$}
-		\HgraficarPNG{0.3}{modo_discontinuo}{Modo discontinuo}{fig:mod_dis}
-
-
 \end{itemize}
+
+
+\HgraficarEPS{0.5}{modo_discontinuo}{Modo discontinuo}{fig:mod_dis}
+
+
+
