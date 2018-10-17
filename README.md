@@ -1,4 +1,4 @@
-# Actividad 2 - TURNER 730 - C2
+# Actividad 3 - Fuentes Conmutadas - C2
 ### Requisitos
 *Octave*: 
 
